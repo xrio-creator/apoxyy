@@ -1,0 +1,104 @@
+.footer {
+  border-top: 1px solid var(--border-subtle);
+  background: rgba(6, 7, 10, 0.95);
+  padding: 4rem 0 2.5rem;
+  margin-top: 4rem;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.brandCol {
+  max-width: 320px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.brandIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--gradient-brand);
+  border-radius: var(--radius-sm);
+  color: white;
+}
+
+.brandDesc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.linkCols {
+  display: flex;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.colTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.linkItem {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.linkItem:hover {
+  color: var(--text-highlight);
+}
+
+.bottomBar {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.badges {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.badgeItem {
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+}

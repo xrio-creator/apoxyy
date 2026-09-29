@@ -1,0 +1,109 @@
+.reviewsSection {
+  padding: 6rem 0;
+  position: relative;
+  background: radial-gradient(ellipse at 50% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 80%);
+}
+
+.header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.tag {
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.scoreBanner {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 3.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.25rem;
+  color: #f59e0b;
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 3.5rem;
+}
+
+.reviewCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-glow);
+}
+
+.quoteText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.reviewerMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1rem;
+}
+
+.reviewerName {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.reviewerOutlet {
+  font-size: 0.8rem;
+  color: #38bdf8;
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 900px) {
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+  }
+}

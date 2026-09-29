@@ -1,0 +1,153 @@
+.footer {
+  border-top: 1px solid var(--border-subtle);
+  background: #050608;
+  padding: 5rem 0 3rem;
+  position: relative;
+}
+
+.boxContentsSection {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem 3rem;
+  margin-bottom: 4.5rem;
+}
+
+.boxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.boxTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: white;
+}
+
+.boxGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.boxItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-subtle);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+}
+
+.boxIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+  flex-shrink: 0;
+}
+
+.boxItemTitle {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.boxItemSub {
+  font-size: 0.785rem;
+  color: var(--text-secondary);
+}
+
+.footerLinksGrid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 3rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brandName {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brandDesc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.linkColTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linkItem {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.linkItem:hover {
+  color: #38bdf8;
+}
+
+.bottomBar {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.825rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .boxGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footerLinksGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .boxGrid {
+    grid-template-columns: 1fr;
+  }
+  .footerLinksGrid {
+    grid-template-columns: 1fr;
+  }
+}
